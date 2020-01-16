@@ -11,25 +11,10 @@
     height: 30px;
     background-color: red;
   }
-  .nav-list {
-    padding-left: 0;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-    margin-right: auto;
-  }
-  .nav-item {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
   .profile-field {
     margin-left: auto;
     @media #{$min-tablet-width} {
       position: relative;
     }
-  }
-  .profile-popup {
-
   }
 }

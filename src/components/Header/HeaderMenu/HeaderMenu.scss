@@ -1,0 +1,10 @@
+@import "../../../sass/variables";
+@import "../../../sass/mixins";
+
+.header-menu {
+  @media #{$min-tablet-width} {
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+}

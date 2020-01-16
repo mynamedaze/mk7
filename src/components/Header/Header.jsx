@@ -1,5 +1,9 @@
 import React from 'react';
 import './Header.scss';
+import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
+import MainNav from "../MainNav/MainNav";
+import HeaderMenu from "./HeaderMenu/HeaderMenu";
+import UserPreview from "../UserPreview/UserPreview";
 
 class Header extends React.Component {
   render() {
@@ -9,40 +13,15 @@ class Header extends React.Component {
 		  <a href="#" className="logo-link">
 			<img src="#" alt="mk7" className="logo"/>
 		  </a>
-		  <nav className="nav">
-			<ul className="nav-list">
-			  <li className="nav-item">
-				<a href="#" className="nav-link">About</a>
-			  </li>
-			  <li className="nav-item">
-				<a href="#" className="nav-link">Contact</a>
-			  </li>
-			</ul>
-		  </nav>
+		  <MainNav/>
 		  <div className="profile-field">
 			<div className="profile-logreg">
 			  <a href="#" className="login-btn">Login</a>
 			  <span> / </span>
 			  <a href="#" className="register-btn">Register</a>
 			</div>
-			<a href="#" className="profile">
-			  <img src="#" alt="user" className="avatar"/>
-			  <span className="username">Username</span>
-			</a>
-			<div className="profile-popup">
-			  <ul className="menu-list">
-				<li className="menu-item">
-                  <span className="menu-user">
-                    <img src="#" alt="user" className="avatar"/>
-                    <span className="username">Username</span>
-                  </span>
-				  <a href="#" className="menu-link  menu-link--profile">Profile</a>
-				  <a href="#" className="menu-link  menu-link--somelink">Some link</a>
-				  <a href="#" className="menu-link  menu-link--somelink">Some link</a>
-				  <a href="#" className="menu-link  menu-link--logout">Logout</a>
-				</li>
-			  </ul>
-			</div>
+			<UserPreview/>
+			<HeaderMenu/>
 		  </div>
 		</div>
 	  </header>

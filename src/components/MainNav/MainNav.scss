@@ -1,0 +1,27 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.main-nav {
+  @media #{$max-mobile-width} {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: orange;
+  }
+  .list {
+    padding-left: 0;
+    list-style-type: none;
+    @media #{$min-tablet-width} {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
